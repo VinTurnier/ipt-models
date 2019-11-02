@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  db:
+    build: .
+    container_name: ipt_local_db
+    environment:
+      MYSQL_DATABASE: 'ipt_local'
+      MYSQL_USER: 'ipt_user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'password'
+    ports:
+      - 3306:3306
+    expose:
+      - '3306'
+
+
