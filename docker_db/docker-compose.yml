@@ -1,8 +1,8 @@
-version: '2'
+version: '3'
 
 services:
   db:
-    build: .
+    build: ./docker_file
     container_name: ipt_local_db
     environment:
       MYSQL_DATABASE: 'ipt_local'
