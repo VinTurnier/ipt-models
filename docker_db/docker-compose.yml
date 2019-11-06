@@ -3,7 +3,7 @@ version: '3'
 services:
   db:
     build: ./docker_file
-    container_name: ipt_local_db
+    container_name: ipt_localdb
     environment:
       MYSQL_DATABASE: 'ipt_local'
       MYSQL_USER: 'ipt_user'
