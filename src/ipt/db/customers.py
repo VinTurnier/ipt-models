@@ -10,7 +10,7 @@ class Customer(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     phone_number = Column(String(25),nullable=False)
-    num_media_sent = Column(Integer, nullable=False, server_default=0)
+    num_media_sent = Column(Integer, nullable=False)
     created_at = Column(TIMESTAMP,nullable=False, server_default=text("CURRENT_TIMESTAMP"))
     updated_at = Column(TIMESTAMP,nullable=False, server_default=text("CURRENT_TIMESTAMP"))
 
@@ -26,5 +26,5 @@ class Customer(Base):
     def __repr__(self):
         return str(self.as_dict())
     
-    
+
 
