@@ -11,7 +11,7 @@ class Image(Base):
     url = Column(String(255),nullable=False)
     # key_points = Column(Types?, nullable=False)
     # descriptor = Column(Type?, nullable=False)
-    # num_of_matched = Column(Interger,nullable=False)
+    num_of_matches = Column(Integer, nullable=False)
     timestamp = Column(DateTime,server_default=text('CURRENT_TIMESTAMP'),nullable=False)
 
 
@@ -24,9 +24,4 @@ class Image(Base):
     
     def __repr__(self):
         return str(self._asdict())
-
-
-# new table, customer table
-# column: phone_number
-# column: interactions
 
