@@ -14,7 +14,7 @@ class Customer(Base):
     created_at = Column(TIMESTAMP,nullable=False, server_default=text("CURRENT_TIMESTAMP"))
     updated_at = Column(TIMESTAMP,nullable=False, server_default=text("CURRENT_TIMESTAMP"))
 
-    def as_dict(self):
+    def _asdict(self):
         return {
             "id": self.id,
             "phone_number": self.phone_number,
@@ -24,7 +24,7 @@ class Customer(Base):
         }
     
     def __repr__(self):
-        return str(self.as_dict())
+        return str(self._asdict())
     
 
 

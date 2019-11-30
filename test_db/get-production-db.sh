@@ -1,6 +1,6 @@
 printf "Dumping iptProduction Database to ./mysql-scripts...\n"
 mysqldump --defaults-group-suffix=production \
-            --where="1 limit 500" \
+            --where="1 limit 50" \
             --set-gtid-purged=OFF \
             iptProduction | pv -W > ./mysql-scripts/iptProduction.sql
 
