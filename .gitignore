@@ -2,3 +2,5 @@ venv
 ipt.egg-info
 __pycache__
 .my.cnf
+.vscode
+.pytest_cache
