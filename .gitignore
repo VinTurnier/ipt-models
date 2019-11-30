@@ -1,3 +1,4 @@
 venv 
 ipt.egg-info
 __pycache__
+.my.cnf

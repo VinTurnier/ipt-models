@@ -3,7 +3,7 @@ from sqlalchemy import Column, String, Integer, TIMESTAMP, DateTime
 from sqlalchemy.sql import text
 
 # Local Application Imports
-from ipt.db.base import Base 
+from ipt.db_orm.base import Base 
 
 class Customer(Base):
     __tablename__="customers"
