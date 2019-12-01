@@ -9,8 +9,8 @@ class Image(Base):
 
     id = Column(Integer,primary_key=True,autoincrement=True)
     url = Column(String(255),nullable=False)
-    # key_points = Column(String(255), nullable=False)
-    # descriptor = Column(String(255), nullable=False)
+    key_points = Column(String(255), nullable=False)
+    descriptor = Column(String(255), nullable=False)
     num_of_matches = Column(Integer, nullable=False)
     timestamp = Column(DateTime,server_default=text('CURRENT_TIMESTAMP'),nullable=False)
 

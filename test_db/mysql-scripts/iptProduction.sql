@@ -35,7 +35,7 @@ CREATE TABLE `alembic_version` (
 
 LOCK TABLES `alembic_version` WRITE;
 /*!40000 ALTER TABLE `alembic_version` DISABLE KEYS */;
-INSERT INTO `alembic_version` VALUES ('3c8939fcc002');
+INSERT INTO `alembic_version` VALUES ('e788832e20f8');
 /*!40000 ALTER TABLE `alembic_version` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -78,6 +78,8 @@ CREATE TABLE `images` (
   `url` varchar(150) NOT NULL,
   `timestamp` datetime DEFAULT CURRENT_TIMESTAMP,
   `num_of_matches` int(11) NOT NULL,
+  `key_points` varchar(255) NOT NULL,
+  `descriptors` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -101,4 +103,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-30 21:34:36
+-- Dump completed on 2019-12-01 15:40:41
